@@ -1,10 +1,25 @@
-<!DOCTYPE html>
-<html lang="en" th:fragment="parent" xmlns:th="http://www.thymeleaf.org">
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="parent(content)" >
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title th:text="${title}"></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" th:href="@{'css/output.css'}"/>
 </head>
-<body>
+<body class="dark:bg-gray-900 dark:text-white">
+    <!-- main content -->
+    <div data-th-replace="navbar::navbar"> </div>
 
+    <section data-th-replace="${content}"></section>
+
+    <!-- Common Footer -->
+    <footer>
+        <p>Zenpium&copy; 2021-24</p>
+    </footer>
+    <!-- flowbite JS cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 </html>

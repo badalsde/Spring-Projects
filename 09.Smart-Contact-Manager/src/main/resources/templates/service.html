@@ -1,7 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" th:replace="~{base :: parent}" xmlns:th="http://www.thymeleaf.org">
-<head><title></title></head>
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base :: parent(~{::section})" >
+<head>
+    <title>Service Page</title>
+</head>
 <body>
-    <h1>This is Service PAge</h1>
+    <section>
+        <h1>Welcome to Service Page</h1>
+        <h3>Service Offered by SCM</h3>
+    </section>
 </body>
 </html>
