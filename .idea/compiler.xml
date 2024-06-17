@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="06.Movie" />
+        <module name="05.CousrierService" />
+        <module name="01.Internship" />
+        <module name="08.ContactManager" />
+        <module name="02.CabBooking" />
+        <module name="03.WeCARE" />
+        <module name="04.IRCTC" />
+        <module name="07.Flight-Booking" />
+        <module name="09.Smart-Contact-Manager" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="01.Internship" options="-parameters" />
+      <module name="02.CabBooking" options="-parameters" />
+      <module name="03.WeCARE" options="-parameters" />
+      <module name="04.IRCTC" options="-parameters" />
+      <module name="05.CousrierService" options="-parameters" />
+      <module name="06.Movie" options="-parameters" />
+      <module name="07.Flight-Booking" options="-parameters" />
+      <module name="08.ContactManager" options="-parameters" />
+      <module name="09.Smart-Contact-Manager" options="-parameters" />
+    </option>
+  </component>
+</project>
