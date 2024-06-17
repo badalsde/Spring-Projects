@@ -1,0 +1,14 @@
+project:
+  projectname:
+    absent: "Please provide project name"
+  ideaowner:
+    absent: "Please provide idea owner name"
+  releasedate:
+    absent: "Please provide project release date"
+  mentor:
+    absent: "Please provide mentor details"
+
+mentor:
+  mentorid:
+    absent: "Please provide mentor id"
+    invalid: "Mentor id should be of 4 digits"

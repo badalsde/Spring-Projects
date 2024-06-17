@@ -1,0 +1,30 @@
+#General Exceptions
+General:
+  EXCEPTION_MESSAGE: Request could not be processed due to some issue. Please try again!
+#Service Errors
+Service:
+  CANNOT_ALLOCATE_PROJECT: The selected mentor is already mentoring 3 projects
+  MENTOR_NOT_FOUND: Mentor details not found
+  NO_DETAILS_FOUND: No records found for this input
+  PROJECT_NOT_FOUND: Project details not found
+#API Responses
+API:
+  ALLOCATION_SUCCESS: New project allocated to the mentor with project Id
+  PROJECT_UPDATE_SUCCESS: Project mentor successfully updated.
+  PROJECT_DELETE_SUCCESS: Project successfully deleted.
+
+#MySQL Configuration
+spring:
+  application:
+    name: 01.Internship
+  datasource:
+    url: jdbc:mysql://localhost:3306/projects
+    username: user
+    password: pass123
+#JPA Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      format_sql: true
